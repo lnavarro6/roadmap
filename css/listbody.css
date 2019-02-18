@@ -41,10 +41,10 @@
 	text-align:center;
 }
 
-.courses:nth-child(4n){
+.courses:nth-of-type(4n){
 	margin-right:0px;
 }
-.courses:nth-child(4n+1){
+.courses:nth-of-type(4n+1){
 	clear:left;
 }
 
@@ -76,4 +76,21 @@
 
 .courses:hover .normal {
  opacity: 0;
+}
+
+.divlink{
+    position: absolute;
+    width: 20vw;
+    height: 40px;
+    
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 100;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
 }
