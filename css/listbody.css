@@ -1,3 +1,4 @@
+
 .listBody .name{
 	clear:both;
 	color:#f6f6f6;
@@ -19,8 +20,9 @@
 	margin-left:30px;
 }
 .subject{
-	clear:both;
-	display: inline-block;
+	clear:left;
+	display:inline-block;
+	height:auto;
 }
 
 .courses{
@@ -36,6 +38,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align:center;
 }
 
 .courses:nth-child(4n){
@@ -56,6 +59,10 @@
  display: flex;
  align-items: center;
  justify-content: center;
+}
+
+.courses .normal;{
+	display:inline-block;
 }
 
 .courses:hover .hover {

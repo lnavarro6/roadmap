@@ -37,18 +37,42 @@
 	}
 	
 	.courses{
-		width:20vw;
+		width:75vw;
 		font-size:1em;
 		margin-right:15px;
 		margin-top:15px;
 	}
 	
 	.courses .hover{
-		width:20vw;
+		width:75vw;
 		font-size:1em;
 	}
 	
 	.listBody .textBody{
-		margin-bottom:20px;
+		margin-bottom:10px;
+		margin-top:20px;
 	}
+
+.courses:nth-child(n){
+	margin-right:0px;
+}
+.courses:nth-child(4n+1){
+	clear:none;
+}
+
+.courses:nth-child(n){
+	clear:both;
+}
+
+.subject{
+	display:inline-block;
+}
+
+.listBody .textBody{
+	margin-left:20px;
+}
+
+.listBody .name{margin-top:20px;}
+
+
 }
