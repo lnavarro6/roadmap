@@ -47,4 +47,8 @@
 		width:20vw;
 		font-size:1em;
 	}
+	
+	.textBody{
+		margin-bottom:20px;
+	}
 }
