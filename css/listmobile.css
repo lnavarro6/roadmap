@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1000px) {
+  
+  .search span{
+	  display:none;
+  }
+  
+  .top-left .dropdown{
+	display:block;
+}
+  
+  #logoSmall{
+	display:inline-block;
+	width:40vw;
+	max-width:200px;
+	height:auto;
+	padding:0 0 10px 0;
+	background-color:transparent;
+	}
+
+	#logoRegular{
+	display:none;
+	}
+	
+	.top-left span{
+		display:none;
+	}
+	
+	.search{
+	width:60vw;
+	height:100px;
+	text-align: center;
+	top: 67%; 
+	}
+	
+	.search input{
+	width:60vw;
+	}
+	
+	.courses{
+		width:20vw;
+		font-size:1em;
+		margin-right:15px;
+		margin-top:15px;
+	}
+	
+	.courses .hover{
+		width:20vw;
+		font-size:1em;
+	}
+}

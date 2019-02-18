@@ -1,0 +1,72 @@
+.listBody .name{
+	clear:both;
+	color:#f6f6f6;
+	font-family: 'GT Walsheim Pro Regular';
+	font-size:1.2em;
+	padding:11px 3.65vw;
+	float:left;
+	background-color:#2b2b2b;
+	margin-top:30px;
+}
+
+.listBody .textBody{
+	clear:both;
+	color:#2b2b2b;
+	font-family: 'GT Walsheim Pro Regular';
+	font-size:1em;
+	float:left;
+	margin-top:30px;
+	margin-left:30px;
+}
+.subject{
+	clear:both;
+	display: inline-block;
+}
+
+.courses{
+	color:#f6f6f6;
+	font-family: 'GT Walsheim Pro Regular';
+	font-size:1em;
+	background-color:#2b2b2b;
+	margin-right:33px;
+	margin-top:30px;
+	width:20vw;
+	height:40px;
+	float:left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.courses:nth-child(4n){
+	margin-right:0px;
+}
+.courses:nth-child(4n+1){
+	clear:left;
+}
+
+.courses .hover {
+ position:absolute;
+ opacity: 0;
+ transition: .1s ease;
+ width:20vw;
+ height:40px;
+ background-color:#ffff00;
+ color:#2b2b2b;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.courses:hover .hover {
+ opacity: 1;
+ cursor: pointer;
+}
+
+.courses .normal {
+ transition: .1s ease;
+}
+
+.courses:hover .normal {
+ opacity: 0;
+}
