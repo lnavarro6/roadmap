@@ -1,0 +1,32 @@
+#content{
+	font-family: 'GT Walsheim Pro Regular';
+	font-size:1em;
+	margin-top:30px;
+	background-color:#f6f6f6;
+	width:90vw;
+	height:auto;
+	clear:left;
+	display:none;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+#content p{
+	text-align: justify;
+}
+
+#closecontent{
+	font-family: 'GT Walsheim Pro Regular';
+	font-size:1em;
+	margin-top:30px;
+	background-color:#2b2b2b;
+	width:90vw;
+	height:auto;
+	clear:left;
+	color: #f6f6f6;
+	padding: 10px 0 10px 0;
+	margin-top:0;
+	cursor: pointer;
+	text-decoration:none;
+}
+

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Unity WebGL Player | isometricRoadmap</title>
+<link rel="shortcut icon" href="TemplateData/favicon.ico">
+<link rel="stylesheet" href="TemplateData/style.css">
+<script src="TemplateData/UnityProgress.js" crossorigin="anonymous"></script>
+<script src="Build/UnityLoader.js" crossorigin="anonymous"></script>
+<script crossorigin="anonymous">
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Z Export Folder.json", {onProgress: UnityProgress});
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/sidenav.css">
+<link rel="stylesheet" type="text/css" href="css/headersearch.css">
+<link rel="stylesheet" type="text/css" href="css/headertop.css">
+<link rel="stylesheet" type="text/css" href="css/headermobile.css">
+<link rel="stylesheet" type="text/css" href="css/worldmapbody.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+
+<body>
+<div id="opacity"></div>
+
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<span><a href="">Profile</a></span>
+<span><a href="">Worldmap</a></span>
+<span><a href="">Roadmap</a></span>
+<span><a href="">Manager Panel</a></span>
+<span><a href="">L&D Panel</a></span>
+
+</div>
+	
+	
+<div class="header">
+
+<div class="top-left">
+<div class="dropdown">
+	<img src="img/menu.png" onclick="openNav()" id="menumobile"/>
+</div>
+<a href=""><img src="img/logo.png" id="logoRegular"/></a>
+<span><a href="">PROFILE</a></span>
+<span><a href="">WORLDMAP</a></span>
+<span><a href="">ROADMAP</a></span>
+<span><a href="">MANAGER PANEL</a></span>
+<span><a href="">L&D PANEL</a></span>
+</div>
+
+<div class="top-right">
+<span id="signup"><a href="">Signup</span></a>
+<span id="login"><a href="">Login</span></a>
+<img src="img/idpic.jpg">
+</div>
+			
+<div class="search">
+<span>TRAINING BOARD</span>
+<img src="img/logo.png" id="logoSmall"/><br>
+<input type="text">
+<button type="submit" id="magnifier"><img src="img/magnifier.png" style="height:15px"></button>
+</div>	
+</div>
+		
+
+<div class="webgl-content">
+<div id="gameContainer" style="width: 95vw; height: 90vh"></div>
+</div>
+
+		
+<div class="footer">
+<hr>
+
+<div class="note">
+Valuable and relevant learning resources developed before the spin-off of the Enterprise Services business might contain some content and brand elements that have not been updated. Learning resources with the highest usage will be prioritized for updates. This learning management system is a training community and any social commentary and feedback provided by learners through use of the social functionality will be publicly available to all learners in the community to better inform all learners with feedback for specific training and experiences. 
+</div>
+
+<div class="power">
+Powered by SABA <br>
+Copyright © 2019 Saba Software, Inc. All rights reserved.<br>
+Version: Saba Cloud U42-741<br>
+</div>
+
+<div class="others">
+<span><a href="">SUPPORT</a></span>
+<span><a href="">ABOUT</a></span>
+<span><a href="">T&C</a></span>
+<span><a href="">PRIVACY</a></span>
+</div>
+<div class="lastNote">
+Copyright © 2018 Saba Software, Inc. All rights reserved.
+</div>
+
+</div>
+
+</body>
+</html>

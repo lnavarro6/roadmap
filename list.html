@@ -1,178 +1,149 @@
+
+<!DOCTYPE html>
 <html>
 
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/listheader.css">
-		<link rel="stylesheet" type="text/css" href="css/listbody.css">
-		<link rel="stylesheet" type="text/css" href="css/listfooter.css">
-		<link rel="stylesheet" type="text/css" href="css/listmobile.css">
-		<link rel="stylesheet" type="text/css" href="css/sidenav.css">
-		<link rel="stylesheet" type="text/css" href="css/dropdown.css">
-		<link rel="stylesheet" type="text/css" href="css/fonts.css">
-		<link rel="stylesheet" type="text/css" href="css/headermobile.css">
-	</head>
+<head>
 
-	<body>
-	<div id="opacity"></div>
-	<div id="mySidenav" class="sidenav">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <span><a href="">Profile</a></span>
-				<span><a href="">Worldmap</a></span>
-				<span><a href="">Roadmap</a></span>
-				<span><a href="">Manager Panel</a></span>
-				<span><a href="">L&D Panel</a></span>
-	</div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/sidenav.css">
+<link rel="stylesheet" type="text/css" href="css/headersearch.css">
+<link rel="stylesheet" type="text/css" href="css/headertop.css">
+<link rel="stylesheet" type="text/css" href="css/headermobile.css">
+<link rel="stylesheet" type="text/css" href="css/listbody.css">
+<link rel="stylesheet" type="text/css" href="css/listdropdown.css">
+<link rel="stylesheet" type="text/css" href="css/listmobile.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+</head>
+
+<body>
+<div id="opacity"></div>
+
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<span><a href="">Profile</a></span>
+<span><a href="worldmap.html">Worldmap</a></span>
+<span><a href="">Roadmap</a></span>
+<span><a href="">Manager Panel</a></span>
+<span><a href="">L&D Panel</a></span>
+
+</div>
 	
 	
-		<div class="header">
-			<div class="top-left">
+<div class="header">
+
+<div class="top-left">
+<div class="dropdown">
+	<img src="img/menu.png" onclick="openNav()" id="menumobile"/>
+</div>
+<a href=""><img src="img/logo.png" id="logoRegular"/></a>
+<span><a href="">PROFILE</a></span>
+<span><a href="worldmap.html">WORLDMAP</a></span>
+<span><a href="">ROADMAP</a></span>
+<span><a href="">MANAGER PANEL</a></span>
+<span><a href="">L&D PANEL</a></span>
+</div>
+
+<div class="top-right">
+<span id="signup"><a href="">Signup</span></a>
+<span id="login"><a href="">Login</span></a>
+<img src="img/idpic.jpg">
+</div>
 			
-				<div class="dropdown">
-					<img src="img/menu.png" onclick="openNav()" id="menumobile"/>
-				</div>
-				
-				<a href=""><img src="img/logo.png" id="logoRegular"/></a>
-				<span><a href="">PROFILE</a></span>
-				<span><a href="">WORLDMAP</a></span>
-				<span><a href="">ROADMAP</a></span>
-				<span><a href="">MANAGER PANEL</a></span>
-				<span><a href="">L&D PANEL</a></span>
-			</div>
-			<div class="top-right">
-				<span id="signup"><a href="">Signup</span></a>
-				<span id="login"><a href="">Login</span></a>
-				<img src="img/idpic.jpg">
-			</div>
-			
-			<div class="search">
-			<span>TRAINING BOARD</span>
-			<img src="img/logo.png" id="logoSmall"/>
-			<input type="text" name="search">
-			<img src="img/magnifier.png" id="magnifier"></img>
-			</div>	
-		</div>
+<div class="search">
+<span>TRAINING BOARD</span>
+<img src="img/logo.png" id="logoSmall"/><br>
+<input type="text">
+<button type="submit" id="magnifier"><img src="img/magnifier.png" style="height:15px"></button>
+</div>	
+</div>
 		
-		<div class="listBody" id="listBody">
-			<div class="name">
-				<span>Hi, </span>
-				<span id="name">Chi</span><span>!</span>
-			</div>
-			<div class="textBody">
-				<span>Here are your training materials for</span>
-				<span id="subject">Web Development</span>
-			</div>
-			<center>
-			<div class="subject">
-				<div class="courses" onClick="showHide()">
-					<div class="normal" id="subject1">HTML</div>
-					<a class="divlink hover" href="#content">Take Now</a>
-				</div>
-				<div class="courses">
-					<div class="normal" id="subject2">CSS</div>
-					<div class="hover">Take Now</div>
-				</div><div class="courses">
-					<div class="normal" id="subject3">Javascript</div>
-					<div class="hover">Take Now</div>
-				</div><div class="courses">
-					<div class="normal" id="subject4">SQL</div>
-					<div class="hover">Take Now</div>
-				</div><div class="courses">
-					<div class="normal" id="subject5">PHP</div>
-					<div class="hover">Take Now</div>
-				</div><div class="courses">
-					<div class="normal" id="subject6">Subject 6</div>
-					<div class="hover">Take Now</div>
-				</div><div class="courses">
-					<div class="normal" id="subject7">Subject 7</div>
-					<div class="hover">Take Now</div>
-				</div><div class="courses">
-					<div class="normal" id="subject8">Subject 8</div>
-					<div class="hover">Take Now</div>
-				</div>
-				<div class="courses">
-					<div class="normal" id="subject9">Subject 9</div>
-					<div class="hover">Take Now</div>
-				</div>
-		</div>
-		</center>
-		
-		<center>
-		<div id="content" style="display:none;">
+<div class="listBody" id="listBody">
+<div class="name">
+<span>Hi, </span>
+<span id="name">Chi</span><span>!</span>
+</div>
+<div class="textBody">
+<span>Here are your training materials for</span>
+<span id="subject">Web Development</span>
+</div>
+<center>
+<div class="subject">
+<div class="courses" id="subject1" onClick="showHide()">
+<div class="normal">HTML</div>
+<a class="divlink hover" href="#content">Take Now</a>
+</div>
+<div class="courses">
+<div class="normal" id="subject2">CSS</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject3">Javascript</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject4">SQL</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject5">PHP</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject6">Subject 6</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject7">Subject 7</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject8">Subject 8</div>
+<div class="hover">Take Now</div>
+</div>
+<div class="courses">
+<div class="normal" id="subject9">Subject 9</div>
+<div class="hover">Take Now</div>
+</div>
+</div>
+</center>
+
+<center>
+<div id="content" style="display:none;">
+
+<video src="video/html.mp4" width="90%" id="htmlvideo" class="videoTutorials" controls>
+Your browser does not support the video tag.
+</video>
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales magna a efficitur tincidunt. Vivamus dictum, orci tincidunt vulputate faucibus, nunc augue malesuada libero, congue commodo purus orci sit amet est. Cras vulputate eu turpis et iaculis. Proin in blandit tellus, quis tempor neque. Nunc semper, eros ac elementum tincidunt, libero ante viverra odio, eu ullamcorper lectus nisl nec magna. Aenean efficitur massa id molestie ultricies. Cras volutpat eros in tincidunt hendrerit. Curabitur eu diam ligula.</p>
 
-<p>Suspendisse varius interdum sem quis vehicula. Curabitur pellentesque eu quam vitae tempus. Aenean dictum finibus ante. Donec ultricies odio in turpis venenatis viverra. Morbi dapibus orci at scelerisque finibus. Quisque vitae viverra nisi. Nam sit amet sem non libero laoreet sollicitudin et nec elit. Sed scelerisque ut urna quis dictum. Vivamus nec fringilla tellus. Maecenas eget ante enim. Donec dapibus aliquet tortor vel tristique. In vitae ligula sit amet diam congue fringilla vel non lectus. Ut euismod luctus leo in accumsan. Sed porttitor leo sit amet scelerisque vulputate. Pellentesque a turpis vitae nulla tincidunt faucibus. Nam gravida, dolor non pellentesque facilisis, leo enim luctus tellus, tempus vehicula ex tellus non enim.</p>
-
-<p>Cras vel rutrum nunc. Phasellus malesuada ex porttitor lacus volutpat, quis sollicitudin ante dignissim. Vivamus ornare ex at lorem blandit volutpat. Mauris ac consectetur leo. Mauris aliquet mi ac molestie sagittis. Quisque id eros vulputate, commodo justo ac, imperdiet turpis. Nulla scelerisque vel nulla in ornare. Proin feugiat elit vel orci facilisis, et auctor purus pretium. Etiam eleifend nisl neque, euismod volutpat sem suscipit nec. Fusce commodo nunc magna, sed mattis ante suscipit sed. Donec id sollicitudin turpis, et aliquam leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ex lacus, fringilla a elit at, finibus pellentesque lacus. Donec vestibulum rutrum est, at mollis sem vulputate sed. Morbi non purus quis nibh ornare rutrum eu id augue.
-
-<p>Ut in turpis vel lacus tincidunt varius in at nisi. Donec egestas, nibh eget placerat porta, enim tortor hendrerit arcu, sed finibus dolor ex et erat. Quisque rhoncus turpis placerat dui finibus dictum. Pellentesque semper felis est, et volutpat lectus volutpat in. Ut orci erat, feugiat in maximus commodo, tempus ut sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sagittis sapien et tellus bibendum pharetra. Ut ex sem, sagittis id nisl nec, suscipit pretium ex. Nam sollicitudin, arcu in gravida lobortis, dui felis laoreet arcu, eu ultrices nisi ante ac nibh.
-
-<p>Pellentesque varius ipsum consequat neque vulputate euismod. Praesent lobortis non ante sed ultrices. Aenean nec dapibus enim. Maecenas elementum sem eu lacus dignissim, sed egestas dolor rhoncus. Integer commodo erat nulla, nec hendrerit elit cursus ac. Nulla id dolor at sapien condimentum consectetur eget sit amet tortor. Phasellus ac tellus erat. Cras sit amet ligula viverra, sollicitudin dolor ut, sodales tortor. Donec laoreet efficitur aliquam. Pellentesque ac lectus porttitor, scelerisque leo eu, scelerisque sapien. Aliquam vulputate tristique sem id feugiat.
-
-<p>Suspendisse condimentum eros non sapien aliquam hendrerit. Ut a eros vel nunc dictum eleifend. Aliquam quam lorem, dapibus id finibus sit amet, fermentum feugiat quam. Morbi eu fringilla tellus. Ut turpis nisi, congue in quam a, porttitor pellentesque magna. Fusce hendrerit malesuada massa, sit amet efficitur ante varius sed. Curabitur consectetur, odio eu semper sollicitudin, elit nunc mattis metus, quis pulvinar purus elit non eros. Morbi condimentum felis a lorem molestie, tempor molestie purus efficitur. Suspendisse vel sem non eros imperdiet dictum quis sed erat.
-
-<p>Sed consequat tristique urna, non faucibus nulla viverra non. Integer eget varius neque. Vestibulum imperdiet tempor laoreet. Praesent accumsan, purus a feugiat dictum, neque eros molestie sem, a varius ligula mauris at mauris. Proin dolor justo, euismod vitae commodo at, tempus quis leo. Nulla faucibus ipsum augue, eget condimentum urna vestibulum ac. Nulla at est mollis, hendrerit magna sed, tristique lectus. Suspendisse sed eros convallis, fringilla risus id, gravida nunc. Sed est metus, facilisis sed risus vitae, scelerisque consectetur elit. Integer et posuere nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque est mauris, tempor non urna eget, efficitur cursus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-<p>Mauris pulvinar laoreet dui a tempor. Fusce sagittis sagittis felis in consectetur. Sed vitae ullamcorper diam, nec eleifend dolor. In vitae justo ut massa tempor auctor. Sed vulputate sem velit, placerat dictum risus ultrices vitae. Nulla vel bibendum neque. Nam a tellus pretium, faucibus ex sed, iaculis magna. Sed nec magna eu arcu feugiat vulputate quis vitae lacus. Sed bibendum maximus ipsum quis auctor.
-
-<p>Aenean faucibus, ex ac viverra interdum, mi urna elementum urna, nec volutpat elit diam ac dui. Praesent vehicula arcu a eros lobortis, in ultrices diam mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean luctus libero nec auctor dapibus. Donec dignissim aliquet ante. In vestibulum risus ut libero luctus, eu blandit nunc iaculis. Maecenas sagittis scelerisque purus lobortis sagittis.
-
-<p>Nam enim enim, feugiat ut dui at, sollicitudin tincidunt nunc. Aliquam quis pretium lacus, ac dapibus sapien. Vestibulum mattis maximus velit sit amet convallis. Suspendisse eu egestas leo. Vivamus lacinia malesuada luctus. Sed porttitor pretium ex, quis condimentum justo volutpat sit amet. Nulla pulvinar posuere varius. Cras placerat odio felis, vel volutpat dolor egestas sit amet. Nam sit amet nulla massa. Nunc sed rhoncus nulla. 
-		</div>
-		<a href="#listBody" id="closecontent" style="display:none;" onClick="showHide()"><b>X</b> Close Tutorial</a>
-		</center>
-		</div>
+</div>
+<a href="#listBody" id="closecontent" style="display:none;" onClick="showHide()"><b>X</b> Close Tutorial</a>
+</center>
+</div>
 		
-		<div class="footer">
-		
-		<hr>
-		
-		<div class="note">
-		  Valuable and relevant learning resources developed before the spin-off of the Enterprise Services business might contain some content and brand elements that have not been updated. Learning resources with the highest usage will be prioritized for updates. This learning management system is a training community and any social commentary and feedback provided by learners through use of the social functionality will be publicly available to all learners in the community to better inform all learners with feedback for specific training and experiences. 
-		</div>
-		
-		<div class="power">
-		  Powered by SABA <br>
-		  Copyright © 2019 Saba Software, Inc. All rights reserved.<br>
-		  Version: Saba Cloud U42-741<br>
-		</div>
-		
-		<div class="others">
-				<span><a href="">SUPPORT</a></span>
-				<span><a href="">ABOUT</a></span>
-				<span><a href="">T&C</a></span>
-				<span><a href="">PRIVACY</a></span>
-		</div>
-		<div class="lastNote">
-		Copyright © 2018 Saba Software, Inc. All rights reserved.
-		</div>
+<div class="footer">
+<hr>
 
-		</div>
-<script>
-/* Set the width of the side navigation to 200px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "200px";
-  document.getElementById("opacity").style.display = "block";
-}
+<div class="note">
+Valuable and relevant learning resources developed before the spin-off of the Enterprise Services business might contain some content and brand elements that have not been updated. Learning resources with the highest usage will be prioritized for updates. This learning management system is a training community and any social commentary and feedback provided by learners through use of the social functionality will be publicly available to all learners in the community to better inform all learners with feedback for specific training and experiences. 
+</div>
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("opacity").style.display = "none";
-}
+<div class="power">
+Powered by SABA <br>
+Copyright © 2019 Saba Software, Inc. All rights reserved.<br>
+Version: Saba Cloud U42-741<br>
+</div>
 
-function showHide(){
-  var x=document.getElementById("content");
-  var y=document.getElementById("closecontent");
-  if (x.style.display == "none") {
-    x.style.display = "inline-block";
-	y.style.display = "block";
-  } else {
-    x.style.display = "none";
-	y.style.display = "none";
-  }
-}
+<div class="others">
+<span><a href="">SUPPORT</a></span>
+<span><a href="">ABOUT</a></span>
+<span><a href="">T&C</a></span>
+<span><a href="">PRIVACY</a></span>
+</div>
+<div class="lastNote">
+Copyright © 2018 Saba Software, Inc. All rights reserved.
+</div>
 
-</script>	
+</div>
+
+<script src="js/list.js"></script>
 	
-	</body>
+</body>
 </html>

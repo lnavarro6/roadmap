@@ -94,3 +94,8 @@
     filter: alpha(opacity=0);
     /*workaround to make clickable in IE */
 }
+
+video{
+	width:90%;
+	margin-top:30px;
+}

@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "isometricRoadmap",
+"dataUrl": "Z Export Folder.data.unityweb",
+"wasmCodeUrl": "Z Export Folder.wasm.code.unityweb",
+"wasmFrameworkUrl": "Z Export Folder.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
