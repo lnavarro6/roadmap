@@ -1,5 +1,7 @@
 @media only screen and (max-width: 1000px) {
-
+.header{
+height: 200px;
+}
 .search span{
   display:none;
 }
