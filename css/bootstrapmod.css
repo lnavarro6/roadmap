@@ -1,0 +1,25 @@
+.container{
+	clear:both;
+	width:90vw;
+}
+
+.col-sm-3{
+	font-family: 'GT Walsheim Pro Regular';
+	font-size:1em;
+	color:#f6f6f6;
+	height:40px;
+	display: flex;
+	margin-right:20px;
+	width:20vw;
+	align-items: center;
+	justify-content: center;
+	background-color:#2b2b2b;	
+}
+
+.col-sm-3:nth-of-type(4n){
+	margin-right:0px;
+}
+
+.row{
+	margin-top:30px;
+}

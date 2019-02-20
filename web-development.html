@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!--Please do not remove!! -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/sidenav.css">
+<link rel="stylesheet" type="text/css" href="css/headersearch.css">
+<link rel="stylesheet" type="text/css" href="css/headertop.css">
+<link rel="stylesheet" type="text/css" href="css/headermobile.css">
+<link rel="stylesheet" type="text/css" href="css/worldmapbody.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<script src="js/w3.js"></script>
+<!--Please do not remove!! -->
+
+<!--LIST-->
+<link rel="stylesheet" type="text/css" href="css/listbody.css">
+<link rel="stylesheet" type="text/css" href="css/listdropdown.css">
+<link rel="stylesheet" type="text/css" href="css/listmobile.css">
+<!--LIST-->
+
+</head>
+
+<body>
+<!--Please do not remove!! -->
+<div w3-include-HTML="header.html"></div>
+<!--Please do not remove!! -->
+
+		
+<div class="listBody" id="listBody">
+
+<div class="persona"><img src="img/persona.png"/></div>
+<div class="name">
+<span>Hi, </span>
+<span id="name">Chi</span><span>!</span>
+</div>
+
+<div class="textBody">
+<span>Here are your training materials for</span>
+<span id="subject">Web Development</span>
+</div>
+
+
+<center>
+<div class="subject">
+<div class="courses" id="subject1" onClick="showHide()">
+<div class="normal">HTML</div>
+<a class="divlink hover" href="#content">Take Now</a>
+</div>
+<div class="courses">
+<div class="normal" id="subject2">CSS</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject3">Javascript</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject4">SQL</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject5">PHP</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject6">Node JS</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject7">Express.JS</div>
+<div class="hover">Take Now</div>
+</div><div class="courses">
+<div class="normal" id="subject8">JSON</div>
+<div class="hover">Take Now</div>
+</div>
+<div class="courses">
+<div class="normal" id="subject9">Angular</div>
+<div class="hover">Take Now</div>
+</div>
+<div class="courses">
+<div class="normal" id="subject9">React</div>
+<div class="hover">Take Now</div>
+</div>
+</div>
+</center>
+
+<center>
+<div id="content" style="display:none;">
+
+<video src="video/html.mp4" width="90%" id="htmlvideo" class="videoTutorials" controls>
+Your browser does not support the video tag.
+</video>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales magna a efficitur tincidunt. Vivamus dictum, orci tincidunt vulputate faucibus, nunc augue malesuada libero, congue commodo purus orci sit amet est. Cras vulputate eu turpis et iaculis. Proin in blandit tellus, quis tempor neque. Nunc semper, eros ac elementum tincidunt, libero ante viverra odio, eu ullamcorper lectus nisl nec magna. Aenean efficitur massa id molestie ultricies. Cras volutpat eros in tincidunt hendrerit. Curabitur eu diam ligula.</p>
+
+</div>
+<a href="#listBody" id="closecontent" style="display:none;" onClick="showHide()"><b>X</b> Close Tutorial</a>
+</center>
+</div>
+		
+<!--Please do not remove!! -->
+<div w3-include-HTML="footer.html"></div>
+<!--Please do not remove!! -->
+
+<script src="js/list.js"></script>
+
+<!--Please do not remove!! -->
+<script>
+includeHTML();
+</script>
+<!--Please do not remove!! -->
+	
+</body>
+</html>

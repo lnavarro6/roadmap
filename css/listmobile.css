@@ -35,5 +35,13 @@ margin-left:20px;
 .listBody .name{
 margin-top:20px;
 }
+
+.footer hr{
+	padding-top:20px;
+}
+
+#content{
+	margin-top:20px;
+}
 }
 
